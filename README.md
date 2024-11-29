@@ -1,1 +1,59 @@
-IyBEZXZPcHMgUG9ydGZvbGlvCgpBIG1vZGVybiBhbmQgY2xlYW4gcG9ydGZvbGlvIHdlYnNpdGUgc2hvd2Nhc2luZyBEZXZPcHMgZW5naW5lZXJpbmcgc2tpbGxzIGFuZCBwcm9qZWN0cy4KCiMjIFByb2plY3QgU3RydWN0dXJlCgpgYGAKcG9ydGZvbGlvLwriiJIg4oCUIGluZGV4Lmh0bWwgICAgICAgICAgICAgIyBNYWluIGVudHJ5IHBvaW50CuKIkiDigJQgY3NzLyAgICAgICAgICAgICAgICAgICAjIFN0eWxpbmcKwrAgICDigJQgc3R5bGUuY3NzICAgICAgICAgICMgQ3VzdG9tIHN0eWxlcwriiJIg4oCUIGpzLyAgICAgICAgICAgICAgICAgICAjIEphdmFTY3JpcHQKwrAgICDigJQgbWFpbi5qcyAgICAgICAgICAgIyBNYWluIEphdmFTY3JpcHQgZmlsZQrCoCAgIOKAlCBjb21wb25lbnRzLyAgICAgICAjIE1vZHVsYXIgY29tcG9uZW50cwrCoCAgICAgICDigJQgc2tpbGxzLmpzCsKwICAgICAgIOKAlCBwcm9qZWN0cy5qcwriiJIg4oCUYXNzZXRzLyAgICAgICAgICAgICAgICMgU3RhdGljIGFzc2V0cwogICAgwrAg4oCUaW1hZ2VzLwpgYGAKCiMjIEZlYXR1cmVzCgotIE1vZGVybiBVSSB3aXRoIFRhaWx3aW5kIENTUwotIERhcmsvTGlnaHQgbW9kZSB0b2dnbGUKLSBSZXNwb25zaXZlIGRlc2lnbgotIENvbXBvbmVudC1iYXNlZCBhcmNoaXRlY3R1cmUKCiMjIFRlY2hub2xvZ3kgU3RhY2sKLSBIVE1MNQotIFRhaWx3aW5kIENTUyAodmlhIENETikKLSBWYW5pbGxhIEphdmFTY3JpcHQKLSBHaXRIdWIgUGFnZXMgZm9yIGhvc3RpbmcKCiMjIERlcGxveW1lbnQKU2l0ZSBpcyBhdXRvbWF0aWNhbGx5IGRlcGxveWVkIHRvIEdpdEh1YiBQYWdlcyBmcm9tIHRoZSBtYWluIGJyYW5jaC4=
+# DevOps Portfolio
+
+A modern DevOps portfolio website showcasing professional experience, technical skills, and automation projects.
+
+## Project Overview
+
+A clean, responsive portfolio website built with modern web technologies and best practices. The site is statically hosted on GitHub Pages for simplicity and reliability.
+
+## Structure
+```
+portfolio/
+├── index.html           # Main page
+├── assets/             # Static resources
+│   ├── css/           # Styling
+│   │   └── style.css   
+│   └── js/            # JavaScript modules
+│       ├── main.js    
+│       └── components/
+│           ├── skills.js
+│           └── projects.js
+└── README.md
+```
+
+## Features
+- Responsive design with Tailwind CSS
+- Dark/Light theme support
+- Component-based architecture
+- Modern DevOps project showcase
+- Skills and certifications display
+- Contact form
+- Blog/Articles section (planned)
+
+## Tech Stack
+- HTML5/CSS3
+- Tailwind CSS
+- Vanilla JavaScript (ES6+)
+- GitHub Pages
+
+## Local Development
+1. Clone the repository
+2. No build process required
+3. Open index.html in browser
+4. Edit files directly
+5. Push to main for deployment
+
+## Deployment
+The site automatically deploys to GitHub Pages from the main branch.
+URL: https://bwhoh.github.io/portfolio
+
+## Roadmap
+- [ ] Add technical blog section
+- [ ] Integrate CI/CD metrics dashboard
+- [ ] Add project demo links
+- [ ] Include architecture diagrams
+- [ ] Add project documentation
+- [ ] Set up automated testing
+
+## License
+MIT License
