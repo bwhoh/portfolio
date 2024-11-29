@@ -1,140 +1,141 @@
-/* Custom Styles inspired by HyperUI and Flowbite */
-
 /* Base styles */
-@layer base {
-    body {
-        @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        @apply font-bold tracking-tight;
-    }
+:root {
+    --primary: #4f46e5;
+    --primary-light: #6366f1;
+    --text-dark: #111827;
+    --text-light: #f9fafb;
+    --bg-dark: #1f2937;
+    --bg-light: #ffffff;
 }
 
-/* Components */
-@layer components {
-    /* Navigation */
-    .nav-link {
-        @apply px-4 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600 dark:text-gray-200 dark:hover:text-indigo-400
-        transition-colors duration-200;
-    }
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
 
-    .nav-button {
-        @apply inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-indigo-600
-        dark:text-gray-200 dark:hover:text-indigo-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500;
-    }
+.dark body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
 
-    /* Hero Section */
-    .hero-title {
-        @apply text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text
-        bg-gradient-to-r from-indigo-500 to-purple-600 dark:from-indigo-400 dark:to-purple-500;
-    }
+/* Navigation */
+.nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    transition: color 0.2s;
+}
 
-    .hero-subtitle {
-        @apply mt-4 text-xl sm:text-2xl text-gray-600 dark:text-gray-300;
-    }
+.dark .nav-link {
+    color: var(--text-light);
+}
 
-    /* Skill Cards */
-    .skill-card {
-        @apply p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition-shadow
-        border border-gray-100 dark:border-gray-700 relative overflow-hidden;
-    }
+.nav-link:hover {
+    color: var(--primary);
+}
 
-    .skill-title {
-        @apply text-lg font-semibold mb-2;
-    }
+/* Hero Section */
+.hero-title {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(to right, var(--primary), var(--primary-light));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
 
-    .skill-level {
-        @apply text-sm font-medium text-indigo-600 dark:text-indigo-400;
-    }
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #4b5563;
+}
 
-    .skill-description {
-        @apply mt-2 text-sm text-gray-600 dark:text-gray-300;
-    }
+.dark .hero-subtitle {
+    color: #d1d5db;
+}
 
-    .skill-icon {
-        @apply absolute -right-4 -bottom-4 w-16 h-16 opacity-10;
-    }
+/* Sections */
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
-    /* Project Cards */
-    .project-card {
-        @apply bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition-all
-        border border-gray-100 dark:border-gray-700 overflow-hidden hover:-translate-y-1 duration-300;
-    }
+.dark .section-title {
+    color: var(--text-light);
+}
 
-    .project-content {
-        @apply p-6;
-    }
+/* Cards */
+.skill-card, .project-card {
+    background: var(--bg-light);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
 
-    .project-title {
-        @apply text-xl font-bold mb-3;
-    }
+.dark .skill-card, .dark .project-card {
+    background: #374151;
+    border: 1px solid #4b5563;
+}
 
-    .project-description {
-        @apply text-gray-600 dark:text-gray-300 mb-4;
-    }
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    .project-tags {
-        @apply flex flex-wrap gap-2 mb-4;
-    }
+/* Form elements */
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+    background: var(--bg-light);
+    color: var(--text-dark);
+}
 
-    .tag {
-        @apply px-3 py-1 text-sm font-medium rounded-full
-        bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200;
-    }
+.dark .form-input {
+    background: #374151;
+    border-color: #4b5563;
+    color: var(--text-light);
+}
 
-    .project-link {
-        @apply inline-flex items-center text-indigo-600 hover:text-indigo-700 dark:text-indigo-400
-        dark:hover:text-indigo-300 font-medium transition-colors;
-    }
+.submit-button {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
 
-    /* Contact Form */
-    .form-input {
-        @apply w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600
-        focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700
-        dark:text-white transition-colors duration-200;
-    }
-
-    .submit-button {
-        @apply w-full px-6 py-3 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg
-        font-medium transition-colors duration-200 focus:outline-none focus:ring-2
-        focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-900;
-    }
+.submit-button:hover {
+    background: var(--primary-light);
 }
 
 /* Animations */
-@layer utilities {
-    .animate-fade-in {
-        animation: fadeIn 0.6s ease-out forwards;
-    }
+.animate-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s ease-out forwards;
+}
 
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    /* Custom scroll behavior */
-    .custom-scrollbar {
-        @apply scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-600
-        scrollbar-track-transparent hover:scrollbar-thumb-gray-400
-        dark:hover:scrollbar-thumb-gray-500;
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-/* Dark mode tweaks */
-.dark .hero-gradient {
-    @apply from-indigo-400 to-purple-500;
+/* Navigation background */
+nav {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
 }
 
-/* Responsive adjustments */
-@media (max-width: 640px) {
-    .skill-card, .project-card {
-        @apply mx-4;
-    }
+.dark nav {
+    background: rgba(31, 41, 55, 0.9);
 }
