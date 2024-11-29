@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps Portfolio</title>
+    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
+        // Force dark mode initially
+        if (!localStorage.theme) {
+            localStorage.theme = 'dark';
+            document.documentElement.classList.add('dark');
+        }
+        
         tailwind.config = {
             darkMode: 'class',
             theme: {
@@ -29,9 +36,12 @@
             }
         }
     </script>
+    
     <!-- Alpine.js -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<!-- Rest of the HTML remains the same -->
+<body class="bg-gray-900 text-white transition-colors duration-200" x-data>
+    <!-- Rest of the body content remains the same -->
+</body>
 </html>
