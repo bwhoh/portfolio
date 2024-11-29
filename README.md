@@ -1,1 +1,59 @@
-IyBEZXZPcHMgUG9ydGZvbGlvCgpBIG1vZGVybiBEZXZPcHMgcG9ydGZvbGlvIHdlYnNpdGUgc2hvd2Nhc2luZyBwcm9mZXNzaW9uYWwgZXhwZXJpZW5jZSwgdGVjaG5pY2FsIHNraWxscywgYW5kIGF1dG9tYXRpb24gcHJvamVjdHMuCgojIyBQcm9qZWN0IE92ZXJ2aWV3CgpBIHByb2Zlc3Npb25hbCwgcmVzcG9uc2l2ZSBwb3J0Zm9saW8gd2Vic2l0ZSBzaG93Y2FzaW5nIERldk9wcyBleHBlcnRpc2UgYW5kIHByb2plY3RzLiBCdWlsdCB3aXRoIG1vZGVybiB3ZWIgdGVjaG5vbG9naWVzIGFuZCBiZXN0IHByYWN0aWNlcy4KCiMjIFN0cnVjdHVyZQpgYGAKcG9ydGZvbGlvLwrilIIg4pSUaW5kZXguaHRtbCAgICAgICAgICMgTWFpbiBwYWdlCuKUgiDilJRhc3NldHMvICAgICAgICAgICAgIyBTdGF0aWMgcmVzb3VyY2VzCuKUgiDilIIg4pSUY3NzLyAgICAgICAgICAgICMgU3R5bGluZwrilIIg4pSCIMKgIOKUlHN0eWxlLmNzcyAgIArilIIg4pSCIOKUlGpzLyAgICAgICAgICAgICAjIEphdmFTY3JpcHQgbW9kdWxlcwrilIIg4pSCIMKgIOKUlG1haW4uanMgICAgCuKUgiDilIIgwqAg4pSUY29tcG9uZW50cy8KfOKUgiDilIIgwqAgwqAg4pSUc2tpbGxzLmpzCnzilIIg4pSCIMKgIMKgIOKUlHByb2plY3RzLmpzCuKUlFJFQURNRS5tZApgYGAKCiMjIEZlYXR1cmVzCi0g8J+SuSBSZXNwb25zaXZlIGRlc2lnbiB3aXRoIFRhaWx3aW5kIENTUwotIPCfk6AgRGFyay9MaWdodCB0aGVtZSBzdXBwb3J0Ci0g8J+TqSBDb21wb25lbnQtYmFzZWQgYXJjaGl0ZWN0dXJlCi0g8J+UtyBNb2Rlcm4gRGV2T3BzIHByb2plY3Qgc2hvd2Nhc2UKLSDwn5OhIFNraWxscyBhbmQgY2VydGlmaWNhdGlvbnMgZGlzcGxheQotIPCfk7QgQ29udGFjdCBmb3JtCi0g8J+TkiBCbG9nL0FydGljbGVzIHNlY3Rpb24gKHBsYW5uZWQpCgojIyBUZWNoIFN0YWNrCi0gSFRNTDUvQ1NTMwotIFRhaWx3aW5kIENTUwotIFZhbmlsbGEgSmF2YVNjcmlwdCAoRVM2KykKLSBHaXRIdWIgUGFnZXMKCiMjIExvY2FsIERldmVsb3BtZW50CjEuIENsb25lIHRoZSByZXBvc2l0b3J5CjIuIE5vIGJ1aWxkIHByb2Nlc3MgcmVxdWlyZWQKMy4gT3BlbiBpbmRleC5odG1sIGluIGJyb3dzZXIKNC4gRWRpdCBmaWxlcyBkaXJlY3RseQo1LiBQdXNoIHRvIG1haW4gZm9yIGRlcGxveW1lbnQKCiMjIERlcGxveW1lbnQKVGhlIHNpdGUgYXV0b21hdGljYWxseSBkZXBsb3lzIHRvIEdpdEh1YiBQYWdlcyBmcm9tIHRoZSBtYWluIGJyYW5jaC4KVVJMOiBodHRwczovL2J3aG9oLmdpdGh1Yi5pby9wb3J0Zm9saW8KCiMjIFJvYWRtYXAKLSBbIF0gQWRkIHRlY2huaWNhbCBibG9nIHNlY3Rpb24KLSBbIF0gSW50ZWdyYXRlIENJL0NEIG1ldHJpY3MgZGFzaGJvYXJkCi0gWyBdIEFkZCBwcm9qZWN0IGRlbW8gbGlua3MKLSBbIF0gSW5jbHVkZSBhcmNoaXRlY3R1cmUgZGlhZ3JhbXMKLSBbIF0gQWRkIHByb2plY3QgZG9jdW1lbnRhdGlvbgotIFsgXSBTZXQgdXAgYXV0b21hdGVkIHRlc3RpbmcKCiMjIExpY2Vuc2UKTU1JVCBMaWNlbnNlCg==
+# DevOps Portfolio
+
+A modern DevOps portfolio website showcasing professional experience, technical skills, and automation projects.
+
+## Project Overview
+
+A professional, responsive portfolio website showcasing DevOps expertise and projects. Built with modern web technologies and best practices.
+
+## Structure
+```
+portfolio/
+├── index.html          # Main page
+├── assets/            # Static resources
+│   ├── css/          # Styling
+│   │   └── style.css   
+│   └── js/           # JavaScript modules
+│       ├── main.js    
+│       └── components/
+│           ├── skills.js
+│           └── projects.js
+└── README.md
+```
+
+## Features
+- 🖹 Responsive design with Tailwind CSS
+- 🌐 Dark/Light theme support
+- 🔩 Component-based architecture
+- 🔷 Modern DevOps project showcase
+- 🔡 Skills and certifications display
+- 🔴 Contact form
+- 📒 Blog/Articles section (planned)
+
+## Tech Stack
+- HTML5/CSS3
+- Tailwind CSS
+- Vanilla JavaScript (ES6+)
+- GitHub Pages
+
+## Local Development
+1. Clone the repository
+2. No build process required
+3. Open index.html in browser
+4. Edit files directly
+5. Push to main for deployment
+
+## Deployment
+The site automatically deploys to GitHub Pages from the main branch.
+URL: https://bwhoh.github.io/portfolio
+
+## Roadmap
+- [ ] Add technical blog section
+- [ ] Integrate CI/CD metrics dashboard
+- [ ] Add project demo links
+- [ ] Include architecture diagrams
+- [ ] Add project documentation
+- [ ] Set up automated testing
+
+## License
+MIT License
